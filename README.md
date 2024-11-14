@@ -31,7 +31,9 @@ Use the following CPU and memory guidelines to plan the sizing of the NMC. These
 
 \| Number of Edge Appliancesmanaged by NMC | CPUs | Memory (GiB) | Azure VM size | AWS EC2 instance | | Up to 50 | 2 | 16 | \_ [Standard\_E2s\_v4](https://docs.microsoft.com/en-us/azure/virtual-machines/ev4-esv4-series#esv4-series)\_ | _r5.large_ | | Up to 100 | 4 | 16 | \_ [Standard\_D4s\_v4](https://docs.microsoft.com/en-us/azure/virtual-machines/dv4-dsv4-series#dsv4-series)\_ | _m5.xlarge_ | | Up to 300\* | 8 | 32 | \_ [Standard\_D8s\_v4](https://docs.microsoft.com/en-us/azure/virtual-machines/dv4-dsv4-series#dsv4-series)\_ | _m5.2xlarge_ |
 
-\*If managing more than 200 Edge Appliances, additional backend configuration is necessary for the NMC. Contact Nasuni Support for assistance.
+{% hint style="info" %}
+If managing more than 200 Edge Appliances, additional backend configuration is necessary for the NMC. Contact Nasuni Support for assistance.
+{% endhint %}
 
 **These values are based on CPU and memory utilization for a version 8.5 NMC. Earlier versions of the NMC might require additional resources.**
 
