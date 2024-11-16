@@ -1,10 +1,4 @@
-
-
-
-
-
-
- Chapter 7: Volumes Page
+Chapter 7: Volumes Page
 
 
 # Volumes Page
