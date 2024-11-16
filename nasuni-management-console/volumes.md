@@ -33,7 +33,7 @@ From the Volumes page, you can also perform the following actions:
 
 Click Volumes. The _Volumes_ page displays a dashboard of volume information and a list of all managed volumes.
 
-![](Volumes-2.gif)
+![](.gitbook/assets/Volumes-2.gif)
 
 _**Volumes page.**_
 
