@@ -33,9 +33,9 @@ From the Volumes page, you can also perform the following actions:
 
 Click Volumes. The _Volumes_ page displays a dashboard of volume information and a list of all managed volumes.
 
-![](.gitbook/assets/Volumes-2.gif)
+<figure><img src="../.gitbook/assets/Volumes-2.gif" alt=""><figcaption></figcaption></figure>
 
-_**Volumes page.**_
+
 
 #### Volumes Managed
 
@@ -448,7 +448,7 @@ If a volume has Global File Acceleration set as Active, and not Observation, the
 
 _**Volume managed by Global File Acceleration.**_
 
-_In the Volume Services area (SMB (CIFS) and NFS volumes and_ FTP/SFTP director_ies only):_
+_In the Volume Services area (SMB (CIFS) and NFS volumes and_ FTP/SFTP director\_ies only):\_
 
 * _Auditing: Indicates whether file system auditing for the volume is Enabled or Disabled. To enable or disable file system auditing for a volume_ , click the status. Clicking the status opens the Volume Auditing Settings page, with the Edit Volume Auditing Settings dialog box selected. For details, see\*[See File System Auditing](Volumes.htm#83897).\*
 * File Alerts: Indicates whether the File Alert Service (automatically notifying you when files or directories with particular names are written to the Nasuni Edge Appliance) is Enabled or Disabled. If enabled, displays the number of patterns. To enable or disable the File Alert Service, click the status. Clicking the status opens the Volume File Alert Service page, with the Edit File Alert Service dialog box selected. For details, see [See File Alert Service](Volumes.htm#18149).
@@ -741,7 +741,7 @@ To create a new SMB (CIFS) or NFS "owned" local volume, follow these steps:
 
 * If the list of Amazon S3 regions cannot be obtained from the NOC, an error message appears.
 * From the Target Filer drop-down list, select the managed Nasuni Edge Appliance where you want to create the new volume.
-* From the_Protocol_ drop-down list, select a network protocol on your network. This is the protocol you use to access data on a volume.
+* From the\_Protocol\_ drop-down list, select a network protocol on your network. This is the protocol you use to access data on a volume.
 * For Nasuni recommendations for volume configuration, see \[See Volume Configuration]\(Appendix Volume Configuration.htm#44139).
 * If you plan to enable both SMB (CIFS) and NFS protocols for this volume, enable the NFS protocol first, then add the SMB (CIFS) protocol. Then select POSIX Mixed Mode as the permissions policy. See [See Multiple Protocols](Volumes.htm#83467).
 * For volumes supporting both Windows and Linux/UNIX clients, select _CIFS (Windows clients)_ and use an SMB client on Linux/UNIX.
@@ -938,8 +938,6 @@ To add an export to a new NFS volume, see [See Creating exports](Volumes.htm#252
 
 To add an FTP/SFTP directory to a new SMB (CIFS) or NFS volume, see [See Creating FTP directories](Volumes.htm#98247).
 
-&#x20;
-
 ### Connect to (and Disconnect from) a Remote Volume
 
 There are two types of volumes: local volumes that are “owned” by the local Nasuni Edge Appliance, and remote volumes that belong to other Nasuni Edge Appliances. Remote access allows one or more Nasuni Edge Appliances to connect, using Nasuni, to a volume owned by another Nasuni Edge Appliance. After you enable remote access for a volume, and grant access permissions to the volume, you can connect a Nasuni Edge Appliance to the remote volume. To enable remote access and grant permissions on a volume, see [See Remote Access](Volumes.htm#63470).
@@ -976,16 +974,16 @@ The following information appears for each remotely accessible volume in the lis
 
 * _Name:_ The name of the remotely accessible volume.
 * _Owner:_ The name of the Nasuni Edge Appliance that owns this remotely accessible volume.
-* _Protocol: The protocol of the_ remotely accessible_volume: SMB (CIFS), NFS, or FTP._
+* _Protocol: The protocol of the_ remotely accessible\_volume: SMB (CIFS), NFS, or FTP.\_
 * _Security Mode (SMB (CIFS) volumes only): The security mode of the SMB (CIFS) volume:_ Active Directory, LDAP Directory Services, _Publicly Available, or Unknown._
 * If the permission of a remote volume is Disabled, the remote volume might not display the correct Security Mode for that volume.
 * _Connected:_ A list of Nasuni Edge Appliances already connected to the remotely accessible\*volume.
 
-If more than one\* Nasuni Edge Appliance is connected to the remotely accessible_volume, the number of_ Nasuni Edge Appliances appears. To display a list of Nasuni Edge Appliances connected to the remotely accessible_volume_ , click this number. To collapse the list, click collapse.
+If more than one\* Nasuni Edge Appliance is connected to the remotely accessible\_volume, the number of\_ Nasuni Edge Appliances appears. To display a list of Nasuni Edge Appliances connected to the remotely accessible\_volume\_ , click this number. To collapse the list, click collapse.
 
-* Actions: Actions available for each remotely accessible_volume._
-* To refresh the information about the list of remotely accessible_volumes,_ click _Refresh Connections_ .
-* For the remotely accessible_volume whose connections you want to change,_ click _Edit Connections_ . The Connect/Disconnect Volume dialog box appears.
+* Actions: Actions available for each remotely accessible\_volume.\_
+* To refresh the information about the list of remotely accessible\_volumes,\_ click _Refresh Connections_ .
+* For the remotely accessible\_volume whose connections you want to change,\_ click _Edit Connections_ . The Connect/Disconnect Volume dialog box appears.
 
 ![](Volumes-42.gif)
 
@@ -994,7 +992,7 @@ If more than one\* Nasuni Edge Appliance is connected to the remotely accessible
 A list of managed Nasuni Edge Appliances appears.
 
 * An Edge Appliance running a version before 9.15 cannot connect to a volume with AWS PrivateLink credentials.
-* _To connect a currently disconnected managed Nasuni Edge Appliance to the selected_ remotely accessible_volume, select the check box next to the managed Nasuni Edge Appliance._
+* _To connect a currently disconnected managed Nasuni Edge Appliance to the selected_ remotely accessible\_volume, select the check box next to the managed Nasuni Edge Appliance.\_
 * To connect to a remote SMB (CIFS) volume, the Nasuni Edge Appliance and the remote SMB (CIFS) volume must be in the same Active Directory or LDAP Directory Services group.
 
 Then, from the Storage Access drop-down list, select one of the following choices:
@@ -1002,15 +1000,13 @@ Then, from the Storage Access drop-down list, select one of the following choice
 * Inherit storage access points: If the remotely accessible volume has shares or exports, inherit those same shares or exports in the new volume.
 * Create storage access points: To automatically create a new SMB (CIFS) share or an NFS export for the new volume.
 * Skip creating storage access points: To postpone creating a new share or export for the new volume. To later add a share to the new SMB (CIFS) volume, see [See Creating shares](Volumes.htm#70843). To later add an export to the new NFS volume, see [See Creating exports](Volumes.htm#25216).
-* _To disconnect a currently connected managed Nasuni Edge Appliance from the selected_ remotely accessible_volume, clear the check box next to the managed Nasuni Edge Appliance._
+* _To disconnect a currently connected managed Nasuni Edge Appliance from the selected_ remotely accessible\_volume, clear the check box next to the managed Nasuni Edge Appliance.\_
 * Disconnecting a Nasuni Edge Appliance from a remotely accessible volume causes all shares and exports of the remotely accessible volume to be deleted from the Nasuni Edge Appliance.
 * It can take 10 minutes or so for the disconnection to resolve.
 * In the Inherit Settings area, select or deselect the settings that you want to inherit from the remotely accessible volume.
 * Click _Save Connections_ to save the changes you made to connections to remotely accessible volumes.
 
 The new information appears in the list of remotely accessible volumes on the Remotely Accessible Volumes page.
-
-&#x20;
 
 ### File System Browser
 
@@ -1661,8 +1657,6 @@ The part of the URL after “_\&filer=_ ” and before the next ampersand “_&_
 
 * Authorization codes (also called “Auth codes”) are intended for a single use, and are not permanent. Authorization codes change if the associated serial number is used successfully, if the authorization code is refreshed via the NMC (Account Status --> Serial Numbers, then click Refresh), and if the authorization code is regenerated via the NOC (visit [_https://account.nasuni.com/account/serial\_numbers/_](https://account.nasuni.com/account/serial\_numbers/) , then click show, then click regen).
 
-&#x20;
-
 ### Unprotected Files
 
 You can view the current unprotected files in the cache for a volume. You can filter by file name, path, size, and owner. A file is protected if a copy of the file has been saved to cloud object storage.
@@ -1758,8 +1752,6 @@ On this screen, the following conditions are available:
 | N4040    | 8000 connections | 10000 connections |
 | N4050    | 8000 connections | 10000 connections |
 
-&#x20;
-
 To create a new NFS export, follow these steps:
 
 1. On the Exports page, click Create Export. The Create Export page appears.
@@ -1803,7 +1795,7 @@ mount -o tcp,nfsvers=3,timeo=600,rsize=16384,wsize=16384,hard
 
 This version of the mount command include s these explicit options: TCP; 10-minute timeout; read and write sizes of 16 KB; hard mount (soft mounts can corrupt data).
 
-These values of_rsize_ and _wsize_ are recommended, but tune them for your system.
+These values of\_rsize\_ and _wsize_ are recommended, but tune them for your system.
 
 The result of the _mount_ command is to mount the NFS export in the target directory. Users can then add data to the NFS volume using copy commands.
 
@@ -1918,7 +1910,7 @@ To view FTP/SFTP directories, follow these steps:
 
 The following information appears for each FTP/SFTP directory in the list:
 
-* _Volume: The volume for the_ FTP/SFTP director_y_ .
+* _Volume: The volume for the_ FTP/SFTP director\_y\_ .
 * _Filer:_ The name of the Nasuni Edge Appliance with volumes that have FTP/SFTP directories.
 * _Name:_ The name of the FTP/SFTP directory.
 * Descriptive comment for the FTP/SFTP directory.
@@ -1954,8 +1946,6 @@ On this screen, the following conditions are available:
 | N2050    | 5000 connections | 6000 connections  |
 | N4040    | 8000 connections | 10000 connections |
 | N4050    | 8000 connections | 10000 connections |
-
-&#x20;
 
 To create a new FTP/SFTP directory on a volume that has the FTP protocol enabled, follow these steps:
 
@@ -2138,8 +2128,6 @@ Nasuni supports the following releases of SMB (CIFS):
 | 2.0                  | Windows Vista                                       | Yes: enabled by default                                                 |
 | 1.0/CIFS/SMBv1       | Windows 3.1                                         | Yes: disabled by default, can be enabled in customer license by Support |
 
-&#x20;
-
 Supported SMB Features
 
 The current version of Nasuni (9.15) supports the following SMB features:
@@ -2179,8 +2167,6 @@ The only way to disable signing is to select SMBv1.
 SMBv1 Support: With version 9.0 and later, SMBv1 is off by default. Nasuni Support can enable SMBv1 on a per-NEA basis.
 
 When using SMBv1, we recommend using the NMC’s Filers → CIFS Settings page to set a 1 MB allocation roundup for SMB shares. This improves performance for SMBv1 clients, and adds a slight performance overhead for SMBv3 clients.
-
-&#x20;
 
 Durable handles allow SMB 2.0 and higher clients to open a file and survive a temporary connection loss (60 seconds or less). Durable handles are supported for volumes with NTFS Exclusive Permissions Policy and cannot be used with Global File Lock.
 
@@ -2254,8 +2240,6 @@ Durable handles allow SMB 2.0 and higher clients to open a file and survive a te
 | N4040    | 8000 connections | 10000 connections |
 | N4050    | 8000 connections | 10000 connections |
 
-&#x20;
-
 To create a new SMB (CIFS) share, follow these steps:
 
 1. On the Shares page, click Create Share. The Create Share page appears.
@@ -2307,7 +2291,7 @@ Since the UTF-8 representation of characters from some character sets can occupy
 If a particular client has other limits, the smaller of the two limits applies.
 
 * Optionally, enter a descriptive comment in the _Comment_ text box.
-* If you want the share to be visible in the list of shares when users map the Nasuni Edge Appliance, select the_Visible Share_ check box. If the share is not visible, it does not appear in the list of shares when users map the Nasuni Edge Appliance; however, if you know the share’s name, you can still map the share directly.
+* If you want the share to be visible in the list of shares when users map the Nasuni Edge Appliance, select the\_Visible Share\_ check box. If the share is not visible, it does not appear in the list of shares when users map the Nasuni Edge Appliance; however, if you know the share’s name, you can still map the share directly.
 * If you want the share folder to be read-only for users on the network, select the _Read Only Share_ check box. This means that users can access the share, but only have read-only rights and, therefore, cannot make changes to any of the files in the shared folder.
 * If you select “Read Only Share”, and then select “Read-Write” as either the group Access ([See For each group in the Groups list, from the Access drop-down list, select either Read-Write, Read-Only, or Deny.](Volumes.htm#38099) on [See For each group in the Groups list, from the Access drop-down list, select either Read-Write, Read-Only, or Deny.](Volumes.htm#38099)) or the user Access ([See For each user in the Users list, from the Access drop-down list, select either Read-Write, Read-Only, or Deny.](Volumes.htm#83784) on [See For each user in the Users list, from the Access drop-down list, select either Read-Write, Read-Only, or Deny.](Volumes.htm#83784)), then the actual access for the group or user is Read-Write. The Read-Write access of the group or user overrides the Read only setting of the share.
 
@@ -2519,8 +2503,6 @@ Account Status --> Refresh License. Then, if the Edge Appliance is managed by th
 | N2050    | 5000 connections | 6000 connections  |
 | N4040    | 8000 connections | 10000 connections |
 | N4050    | 8000 connections | 10000 connections |
-
-&#x20;
 
 If Web Access is enabled, the Web Access Settings pane appears.
 
@@ -2740,8 +2722,6 @@ To disable Auto Cache for a folder, follow these steps:
 
 Auto Cache is disabled for the folder.
 
-&#x20;
-
 ### Cloud I/O
 
 _If the Cloud Provider is a customer-provided cloud provider, the Volume Cloud I/O page is available._
@@ -2780,10 +2760,6 @@ The following information appears for each volume in the list:
 
 1. Click Save to save your settings.
 
-&#x20;
-
-&#x20;
-
 ### Encryption Keys
 
 * For details of encryption key management, see [_Encryption Key Best Practices_](http://b.link/Nasuni\_Encryption\_Key\_Best\_Practices) .
@@ -2795,8 +2771,6 @@ You can view, add, enable, and disable volume encryption keys on the Volume Encr
 * You can send encryption keys from the Nasuni Management Console to Nasuni Edge Appliances. See [See Sending encryption keys to Nasuni Edge Appliances](Filers.htm#72488).
 * Do NOT save encryption key files to a volume on a Nasuni Edge Appliance. You will NOT be able to use these to recover data. This is NOT how to upload encryption keys to a Nasuni Edge Appliance.
 * You can also upload encryption keys using the NMC API. This can be useful for automating tasks and for enhancing security. For more details, see [_Nasuni API Documentation_](https://docs.api.nasuni.com/) .
-
-&#x20;
 
 All data on a volume is encrypted using one or more OpenPGP-compatible encryption keys before being sent to cloud object storage. Volumes may be encrypted with one or more encryption keys, and encryption keys may be used for any number of volumes.
 
@@ -2848,8 +2822,6 @@ The following information appears for each encryption key in the list:
 
 * You can also upload encryption keys using the NMC API. This can be useful for automating tasks and for enhancing security. For more details, see [_Nasuni API Documentation_](https://docs.api.nasuni.com/) .
 
-&#x20;
-
 To add encryption keys to a volume, follow these steps:
 
 1. On the Volume Encryption Keys page, for the selected volume, click Edit ![](Volumes-122.gif) . The Edit Encryption Keys dialog box appears.
@@ -2899,8 +2871,6 @@ _**Edit Encryption Keys dialog box.**_
 
 Alternatively, to exit the dialog box without disabling the selected encryption key, click Close.
 
-&#x20;
-
 ### Name of volume
 
 You can view or change the name of a volume.
@@ -2943,8 +2913,6 @@ _**Volume Name Settings dialog box.**_
 2. Click _Save_ Name. The volume name is changed. The volume appears in the list on the Volume Name page.
 
 Alternatively, to exit the dialog box without changing the volume name, click Close.
-
-&#x20;
 
 ### Pinned Folders
 
@@ -3563,8 +3531,6 @@ Alternatively, the snapshots available can include the following 45 snapshots, i
 
 To use this alternative arrangement of snapshots, request Nasuni Support to configure the sampling policy feature.
 
-&#x20;
-
 ### Snapshot Retention
 
 You can view or change the snapshot retention setting of volumes.
@@ -3639,8 +3605,6 @@ The pros and cons of more frequent time boundaries can be summarized as follows:
 * Should you need to restore data, in certain situations, if the data to be restored is behind a time boundary, it might be necessary to remove the time boundary before performing a fast restore.
 
 If you decide to configure the factor for time boundaries, contact Nasuni Support.
-
-&#x20;
 
 #### Restoring data protected by snapshot retention
 
@@ -3726,7 +3690,7 @@ _**Snapshot Retention dialog box.**_
 1. To copy settings from another volume, select the volume from the Copy Settings drop-down list. The settings from that volume appear in the dialog box.
 2. To update the retention policy, select Update Retention Policy.
 3. You can update the retention policy independently of updating the service configuration.
-4. From the_Retain_ drop-down list, select a retention policy option:
+4. From the\_Retain\_ drop-down list, select a retention policy option:
 5. _All Snapshots_ : (This is the default setting.) Retains all snapshots indefinitely.
 
 If you require deleting older snapshots for compliance or other reasons, do not select this option. 6. _Set Number of Snapshots:_ (This option is not available if the selected volume has Remote Access enabled.) Enter the Number of the most recent snapshots to retain, from 1 snapshot to 1 billion (1,000,000,000) snapshots.
@@ -4138,8 +4102,6 @@ _**Alert for possible delay.**_
 
 The GFA configuration and any Snapshot Schedules are changed. The volume appears in the list on the Volume Snapshot Schedule page.
 
-&#x20;
-
 #### Global File Acceleration (GFA)
 
 Nasuni Global File Acceleration (GFA), a component of the Nasuni® cloud file storage platform, accelerates file synchronization across cloud regions or on-premises locations, helping customers to improve file sharing collaboration and optimize workforce productivity.
@@ -4405,8 +4367,6 @@ Alternatively, if a file is infected, the administrator can delete that file, so
 
 * You can also delete infected files or ignore antivirus violations using the NMC API. This can be useful for automating tasks and for enhancing security. For more details, see [_Nasuni API Documentation_](https://docs.api.nasuni.com/) .
 
-&#x20;
-
 You can enable or disable Antivirus Protection at the volume level.
 
 The Antivirus Protection setting is inherited by connecting Nasuni Edge Appliances. For example, if the Boston Nasuni Edge Appliance enables Antivirus Protection for a volume, and the London Nasuni Edge Appliance connects to that volume, then Antivirus Protection is also enabled for that volume on the London Nasuni Edge Appliance. In such a case, there might be a brief time lag before the London Nasuni Edge Appliance inherits that setting.
@@ -4668,8 +4628,6 @@ Each log file contains at most 100,000 records. For additional records, a new lo
 
 * It is possible that occasionally a specified operation might not be audited and logged, such as when a Nasuni Edge Appliance reboots or restarts. Also, if events occur faster than the auditing, a “Lost Events” entry is made in the log file.
 
-
-
 **Varonis Configuration**
 
 Nasuni can use an external auditing service, such as Varonis.
@@ -4707,8 +4665,6 @@ When specifying shares on the File Server Wizard of the Varonis Management Conso
 * In the Automatic Detection area, you can perform the following:
 * Specify what to do with new shares, by selecting “Automatically detect shares” to be either Never, “Detect and notify”, “Detect and Monitor”, or “Detect, Monitor, and Notify”.
 * Specify the frequency of notification by selecting Notify to be Always or Once.
-
-&#x20;
 
 ### File Alert Service
 
@@ -4810,8 +4766,6 @@ _**Edit File Alert Service dialog box.**_
 
 Alternatively, to exit the dialog box without changing the File Alert Service settings, click Close.
 
-&#x20;
-
 ### Data Propagation
 
 Data propagation requires one Edge Appliance (the source) to push data to cloud storage and another Edge Appliance (the destination) to pull that data from cloud storage.
@@ -4825,8 +4779,6 @@ The time to propagate is measured from the start of the snapshot on the source N
 ![](Volumes-193.gif)
 
 **Data Propagation Time (DPT) chart.**
-
-&#x20;
 
 This chart can be useful to investigate how long it takes data to propagate from a source Edge Appliance to destination Edge Appliances. You can use this to get a general idea about how long it takes data to propagate, or to investigate specific situations involving data propagation.
 
@@ -4858,8 +4810,6 @@ With the Per Filer perspective, you can select and deselect the display of the m
 ![](Volumes-194.gif)
 
 **Age of Oldest Unprotected Data (OUD) chart.**
-
-&#x20;
 
 This chart can be useful to examine how unprotected data moves from the cache to cloud object storage. You can use this to get a general idea about how long data remains in the cache before moving to cloud object storage, or to investigate specific situations involving data moving to cloud object storage.
 
@@ -4904,5 +4854,3 @@ To view data propagation displays, follow these steps:
 5. If the Per Filer perspective is selected, select which Nasuni Edge Appliances to display data for from the Filers drop-down list. You can select up to 5 Nasuni Edge Appliances.
 6. To change from one time span to the next finer time span, click any point on either chart. To change from one time span to the next less fine time span, click Zoom Out.
 7. You can display different combinations of Nasuni Edge Appliances and maximum and average values by clicking the appropriate chart legends.
-
-&#x20;
